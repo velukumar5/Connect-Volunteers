@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="icon" href="img/logo.png">
+    <title>Connect Volunteers</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv.min.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+  
+    <div class="main-wrapper">
+        <div class="header">
+		
+					<h1>Register Complaint for Volunteer Service</h1>
+			
+        </div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <h4 class="page-title">Register Your Complaint</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <form method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+										<label>Victim Name </label>
+										<input class="form-control" type="text" name="p_name"  required>
+									</div>
+                                </div>
+                               
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Service Category</label>
+                                        <select class="" name="department">
+                                            <option value="Medical">Medical Assistance</option>
+                                            <option value="First Aid">First Aid</option>
+                                            <option value="Emergency Rescue">Emergency</option>
+                                            <option value="Food ">Food </option>
+                                            <option value="Others ">Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Service Need</label>
+                                        <input type="text" name="d_name" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Complaint Registered DateDate</label>
+                                        <div class="cal-icon">
+                                            <input type="text" class="form-control datetimepicker" name="date" required >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Complaint Registered Time</label>
+                                        <div class="time-icon">
+                                            <input type="text" class="form-control" id="datetimepicker3" name="time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Victim Email</label>
+                                        <input class="form-control" type="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Victim Phone Number</label>
+                                        <input class="form-control" type="text" name="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="m-t-20 text-center">
+                                <button onclick="myFunction()" class="btn btn-primary submit-btn">Register Complaint</button>
+                            </div>
+                            <script>
+                                function myFunction() {
+                                  alert("Complaint Registered Sucessfully");
+                                }
+                                </script>
+                                
+                        </form>
+                    </div>
+                </div>
+            </div>
+			
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+	<script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.slimscroll.js"></script>
+    <script src="/assets/js/select2.min.js"></script>
+	<script src="/assets/js/moment.min.js"></script>
+	<script src="/assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+	<script>
+            $(function () {
+                $('#datetimepicker3').datetimepicker({
+                    format: 'LT'
+
+                });
+            });
+     </script>
+</body>
+
+
+<!-- add-appointment24:07-->
+</html>

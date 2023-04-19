@@ -1,0 +1,11 @@
+it("Returns domain attributes",async() => {
+      let domain = await ethDaddy.domains(1);
+      expect(domain.name).to.be.equal("jack.eth")
+
+      })
+
+      describe("Domain", () => {
+
+    
+    
+  })
